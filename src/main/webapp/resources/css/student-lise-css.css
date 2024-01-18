@@ -1,0 +1,80 @@
+@charset "UTF-8";
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: url('https://example.com/your-background-image.jpg') center/cover no-repeat fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #3498db, #6c5ce7); /* Blue gradient */
+    padding: 30px 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* White color */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+    color: #333; /* Black text color */
+  }
+  
+  th {
+    background: linear-gradient(90deg, #3498db, #6c5ce7);
+    color: #fff;
+  }
+  
+  tr:hover {
+    background-color: #ecf0f1;
+  }
+  
+  td:last-child, th:last-child {
+    text-align: center;
+  }
+  
+  .update-button {
+    background: #2ecc71; /* Green color */
+  }
+  
+  .delete-button {
+    background: #e74c3c; /* Red color */
+  }
+  
+  .update-button, .delete-button {
+    padding: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .update-button:hover, .delete-button:hover {
+    opacity: 0.9;
+  }
+  

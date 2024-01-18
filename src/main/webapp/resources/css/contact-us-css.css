@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: #c8e8e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width: 80%;
+    background: #ffff;
+    border-radius: 6px;
+    padding: 30px 60px 40px 40px ;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .content .left-side{
+    width: 20%;
+    height: 100%;
+    margin-top: 10px;
+    position: center;
+}
+.container .content .left-side::before{
+    content: '';
+    position: center;
+    height: 70%;
+    width: 2px;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+}
+
+.container .content .left-side .details{
+    font-size: 14px;
+    color: #afafb6;
+}
+.container .content .left-side .details .text-one ,
+.container .content .left-side .details .text-two {
+    font-size: 12px;
+    text-align: absolute;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 8px;
+}
+.container .content .left-side .details i{
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.container .content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+    color: #3e2093;
+}
+.container .content .right-side{
+    width: 80%;
+    margin-left: 80px;
+}
+
+.container .content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+}
+
+.container .content .right-side  .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.container .content .right-side  .input-box input,
+.container .content .right-side  .input-box textarea{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.container .content .right-side  .text-message{
+    min-height: 110px;
+    margin-top: 8px;
+}
+.container .content .right-side .button {
+    display: inline-block;
+    margin-top: 12px;
+}
+.container .content .right-side  .button input[type="button"]{
+    color: #ffff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .content .right-side  .button input[type="button"]:hover{
+    background: #5029bc;
+}
